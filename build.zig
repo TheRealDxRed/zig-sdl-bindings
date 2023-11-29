@@ -5,7 +5,7 @@ pub fn build(b: *std.Build) !void {
         .source_file = .{ .path = "src/binding/sdl.zig" },
     });
     _ = b.addModule("wrapper", .{ .source_file = .{ .path = "src/wrapper/sdl.zig" }, .dependencies = &.{.{
-        .name = "sdl-binding",
+        .name = "sdl-native",
         .module = binding,
     }} });
 }
