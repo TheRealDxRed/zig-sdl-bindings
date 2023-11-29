@@ -1,0 +1,16 @@
+.{
+    .name = "zig-sdl-bindings",
+    .version = "0.0.0",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+        "src",
+    },
+    .dependencies = .{
+        .sdl = .{
+            .url = "https://https://github.com/andrewrk/SDL/archive/3eb87f0f5b8d815d5a608b732e1d77f0876712d9.tar.gz",
+            .hash = "122006f1d25dd112605ad00929f05e05da844decd4bc25996998814704344be87a09",
+        }
+    }
+}

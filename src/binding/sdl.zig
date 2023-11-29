@@ -1,7 +1,5 @@
 const std = @import("std");
-const build_options = @import("build_options");
-
-pub usingnamespace if (build_options.vulkan) @import("vulkan.zig") else struct {};
+pub usingnamespace @import("vulkan.zig");
 
 pub usingnamespace @import("sdl_image.zig");
 pub usingnamespace @import("sdl_ttf.zig");
